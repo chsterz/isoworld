@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>IsoWorld.qml</file>
+        <file>IsoCube.qml</file>
+        <file>Palette.qml</file>
+        <file>FaceMouseArea.qml</file>
+    </qresource>
+</RCC>

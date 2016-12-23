@@ -4,9 +4,10 @@ import QtQuick.Window 2.2
 Window {
     id: root
     visible: true
-    width: 640
-    height: 480
+    width: 1024
+    height: 768
     title: qsTr("Iso-World")
+
     Image{
         id: background
         anchors.fill: parent
@@ -15,7 +16,10 @@ Window {
 
     IsoWorld {
         id: isoWorld
-        x: 334
-        y: 40
+        cubeColor: palette.pickedColor
+    }
+
+    Palette {
+        id: palette
     }
 }
