@@ -9,7 +9,7 @@ MouseArea{
     onWheel: {parent.parent.color = Qt.hsla(Math.random(),0.8,0.5,1)}
     onClicked: {
         if (mouse.button & Qt.LeftButton) {
-            isoCube.parent.createCubeAt(isoCube.xpos + creationOffset.x, isoCube.ypos + creationOffset.y, creationOffset.z);
+            parent.parent.parent.createCubeAt(isoCube.xpos + creationOffset.x, isoCube.ypos + creationOffset.y, isoCube.level + creationOffset.z);
         } else {
             isoCube.destroy()
         }
